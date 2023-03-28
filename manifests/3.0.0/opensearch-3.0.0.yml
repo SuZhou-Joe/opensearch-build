@@ -17,9 +17,6 @@ components:
   - name: common-utils
     repository: https://github.com/opensearch-project/common-utils.git
     ref: main
-    platforms:
-      - linux
-      - windows
     checks:
       - gradle:publish
       - gradle:properties:version
@@ -35,9 +32,6 @@ components:
   - name: job-scheduler
     repository: https://github.com/opensearch-project/job-scheduler.git
     ref: main
-    platforms:
-      - linux
-      - windows
     checks:
       - gradle:properties:version
       - gradle:dependencies:opensearch.version
@@ -120,9 +114,6 @@ components:
   - name: notifications-core
     repository: https://github.com/opensearch-project/notifications.git
     ref: main
-    platforms:
-      - linux
-      - windows
     working_directory: notifications
     checks:
       - gradle:properties:version
@@ -130,9 +121,6 @@ components:
   - name: notifications
     repository: https://github.com/opensearch-project/notifications.git
     ref: main
-    platforms:
-      - linux
-      - windows
     working_directory: notifications
     checks:
       - gradle:properties:version
@@ -158,8 +146,5 @@ components:
   - name: index-management
     repository: https://github.com/opensearch-project/index-management.git
     ref: feature/index_operation_notification
-    platforms:
-      - linux
-      - windows
     checks:
       - gradle:properties:version
