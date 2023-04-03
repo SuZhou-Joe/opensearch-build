@@ -45,3 +45,6 @@ components:
     ref: feature/index_operation_notification
     checks:
       - gradle:properties:version
+  - name: security
+    repository: https://github.com/opensearch-project/security.git
+    ref: main
